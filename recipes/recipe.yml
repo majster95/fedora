@@ -26,6 +26,7 @@ modules:
         - micro
         - starship
         - tailscale
+        - btop
         - vevor-cups-filter-1.0-1.fc44.x86_64.rpm
     remove:
       packages:
