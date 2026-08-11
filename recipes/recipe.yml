@@ -52,5 +52,3 @@ modules:
     system:
       enabled:
         - tailscaled.service
-
-  - type: initramfs
