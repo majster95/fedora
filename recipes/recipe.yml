@@ -44,6 +44,12 @@ modules:
         install: # system flatpaks we want all users to have and not remove
           - org.mozilla.firefox
           - org.gnome.Loupe
+          - com.bitwarden.desktop
+          - com.github.tchx84.Flatseal
+          - io.github.mfat.sshpilot
+          - org.chromium.Chromium
+          - org.localsend.localsend_app
+          - org.onlyoffice.desktopeditors
       - scope: user # Also add Flathub user repo, but no user packages
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
