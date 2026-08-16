@@ -28,8 +28,6 @@ modules:
         - micro
         - starship
         - tailscale
-        - btop
-        - gh
         - vevor-cups-filter-1.0-1.fc44.x86_64.rpm
     remove:
       packages:
@@ -54,3 +52,6 @@ modules:
     system:
       enabled:
         - tailscaled.service
+  - type: brew
+    nofile-limits: true # increase nofile limits
+    brew-analytics: false # disable telemetry
