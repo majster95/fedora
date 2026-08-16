@@ -1,8 +1,6 @@
-# fedora &nbsp; [![bluebuild build badge](https://github.com/majster95/fedora/actions/workflows/build.yml/badge.svg)](https://github.com/majster95/fedora/actions/workflows/build.yml)
+# Custom fedora kinoite image &nbsp; [![bluebuild build badge](https://github.com/majster95/fedora/actions/workflows/build.yml/badge.svg)](https://github.com/majster95/fedora/actions/workflows/build.yml)
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
-
-After setup, it is recommended you update this README to describe your custom image.
+Custom fedora kinoite image based on bluebuild template, including **vevor y428bt thermal printer drivers, tailscale** and **homebrew package manager**.
 
 ## Installation
 
