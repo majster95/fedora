@@ -1,6 +1,10 @@
 # Custom fedora kinoite image &nbsp; [![bluebuild build badge](https://github.com/majster95/fedora/actions/workflows/build.yml/badge.svg)](https://github.com/majster95/fedora/actions/workflows/build.yml)
 
-Custom fedora kinoite image based on bluebuild template, including **vevor y428bt thermal printer drivers, tailscale** and **homebrew package manager**.
+Custom fedora kinoite image based on bluebuild template, changes include:
+- vevor y428bt thermal printer drivers
+- tailscale package
+- homebrew package manager
+- battery charging limit to 80% systemd service
 
 ## Installation
 
