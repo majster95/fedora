@@ -49,5 +49,5 @@ jobs:
           package-name: 'fedora'
           package-type: 'container'
           min-versions-to-keep: 3
-          delete-only-untagged-versions: 'true'
+          delete-only-untagged-versions: 'false'
           ignore-versions: '^latest$'
