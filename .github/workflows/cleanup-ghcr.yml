@@ -1,0 +1,26 @@
+name: Manual GHCR Cleanup
+
+on:
+  workflow_dispatch:
+    inputs:
+      min_versions:
+        description: 'Keep last versions'
+        required: true
+        default: '3'
+        type: string
+
+jobs:
+  cleanup:
+    name: Clean GHCR Images
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+
+    steps:
+      - name: Delete old GHCR images
+        uses: actions/delete-package-versions@v5
+        with:
+          package-name: 'fedora' # Zmień na nazwę swojego pakietu w GHCR, jeśli jest inna
+          package-type: 'container'
+          min-versions-to-keep: ${{ inputs.min_versions }}
+          delete-only-untagged-versions: 'false'
