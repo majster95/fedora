@@ -23,4 +23,5 @@ jobs:
           package-name: 'fedora' # Zmień na nazwę swojego pakietu w GHCR, jeśli jest inna
           package-type: 'container'
           min-versions-to-keep: ${{ inputs.min_versions }}
-          delete-only-untagged-versions: 'false'
+          delete-only-untagged-versions: 'true'
+          ignore-versions: '^latest$'
