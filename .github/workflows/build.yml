@@ -41,3 +41,12 @@ jobs:
           # enabled by default, disable if your image is small and you want faster builds
           maximize_build_space: true
           build_chunked_oci: true
+
+      - name: Delete old GHCR images (keep last 3)
+        uses: actions/delete-package-versions@v5
+        if: github.event_name != 'pull_request'
+        with:
+          package-name: 'fedora'
+          package-type: 'container'
+          min-versions-to-keep: 3
+          delete-only-untagged-versions: 'false'
