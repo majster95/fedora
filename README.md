@@ -4,7 +4,6 @@ Custom fedora kinoite image based on bluebuild template, changes include:
 - vevor y428bt thermal printer drivers
 - tailscale package
 - homebrew package manager
-- battery charging limit to 80% systemd service
 
 ## Installation
 
